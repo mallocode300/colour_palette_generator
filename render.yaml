@@ -8,5 +8,5 @@ services:
     envVars:
       - key: FLASK_ENV
         value: production
-      - key: PYTHON_VERSION # Optional: specify Python version
-        value: 3.11 # Or your preferred Python 3.x version supported by Render 
+      - key: PYTHON_VERSION
+        value: 3.11.9 # Specify a full patch version 
