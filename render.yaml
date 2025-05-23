@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: colour-palette-generator
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    plan: free # Optional: defaults to free
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PYTHON_VERSION # Optional: specify Python version
+        value: 3.11 # Or your preferred Python 3.x version supported by Render 
